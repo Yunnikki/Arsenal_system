@@ -59,7 +59,7 @@ getText (configfile >> "CfgVehicles" >> "WBK_Combine_ASS_SMG" >> "displayName"),
 (configFile >> "CfgVehicles" >> "WBK_Combine_ASS_SMG"),
 getText (configfile >> "CfgVehicles" >> "WBK_Combine_ASS_SMG" >> "WBK_CombineType"),
 getNumber (configfile >> "CfgVehicles" >> "WBK_Combine_ASS_SMG" >> "WBK_CustomHPparam"),
-{WBK_OB_KitDescriptionActual = OB_Description_Text_Assasin; player setVariable ['SFX_R_DisableDyingSounds',1,true]; player setSpeaker 'NoVoice';player disableAI 'RADIOPROTOCOL'; removeGoggles player;}
+{WBK_OB_KitDescriptionActual = OB_Description_Text_Assasin; player setVariable ['SFX_R_DisableDyingSounds',1,true]; player setSpeaker 'NoVoice';player disableAI 'RADIOPROTOCOL'; removeGoggles player; [player, 'WBK_CombineHead'] remoteExec ['setFace', 0, true];}
 ] spawn Wbk_AddKitFromUnitEquipment;
 
 [
@@ -68,7 +68,7 @@ getText (configfile >> "CfgVehicles" >> "WBK_Combine_ASS_Sniper" >> "displayName
 (configFile >> "CfgVehicles" >> "WBK_Combine_ASS_Sniper"),
 getText (configfile >> "CfgVehicles" >> "WBK_Combine_ASS_Sniper" >> "WBK_CombineType"),
 getNumber (configfile >> "CfgVehicles" >> "WBK_Combine_ASS_Sniper" >> "WBK_CustomHPparam"),
-{WBK_OB_KitDescriptionActual = OB_Description_Text_Assasin; player setVariable ['SFX_R_DisableDyingSounds',1,true]; player setSpeaker 'NoVoice';player disableAI 'RADIOPROTOCOL'; removeGoggles player;}
+{WBK_OB_KitDescriptionActual = OB_Description_Text_Assasin; player setVariable ['SFX_R_DisableDyingSounds',1,true]; player setSpeaker 'NoVoice';player disableAI 'RADIOPROTOCOL'; removeGoggles player; [player, 'WBK_CombineHead'] remoteExec ['setFace', 0, true];}
 ] spawn Wbk_AddKitFromUnitEquipment;
 
 

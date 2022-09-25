@@ -1229,6 +1229,7 @@ class CfgVehicles
 		linkedItems[]=
 		{
 			"SC_Helmet_WP_EUD_Guard_VU",
+			"SC_Vest_WP_Light_Guard",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",
@@ -1666,28 +1667,30 @@ class CfgVehicles
 	class WBK_Combine_MR_OFF: WBK_Combine_Ordinal
 	{
 		WBK_BehaveLikeHuman="true";
-		WBK_CustomHPparam=50;
-		WBK_CombineType=" COMBINE_";
+		WBK_CustomHPparam=0;
+		WBK_CombineType=" mro_";
 		displayName="Офицер КМН";
 		uniformClass="WHC76_Officer_Uniform";
 		backpack="";
 		weapons[]=
 		{
 			"SC_Rifle_Ravager",
+			"SC_Reflex_C1_Red",
+			"SC_SSP9_Silencer",
 			"Throw",
 			"Put"
 		};
 		magazines[]=
 		{
-			"SC_Reflex_C1_Red",
-			"SC_Reflex_C1_Red",
-			"SC_Reflex_C1_Red",
-			"SC_Reflex_C1_Red",
-			"SC_Reflex_C1_Red",
-			"SC_Reflex_C1_Red",
-			"SC_Reflex_C1_Red",
-			"SC_Reflex_C1_Red",
-			"SC_Reflex_C1_Red",
+			"SC_20Rnd_Plasma_Mag",
+			"SC_20Rnd_Plasma_Mag",
+			"SC_20Rnd_Plasma_Mag",
+			"SC_20Rnd_Plasma_Mag",
+			"SC_20Rnd_Plasma_Mag",
+			"SC_20Rnd_Plasma_Mag",
+			"SC_20Rnd_Plasma_Mag",
+			"SC_20Rnd_Plasma_Mag",
+			"SC_20Rnd_Plasma_Mag",
 			"OPTRE_M2_Smoke_Orange",
 			"OPTRE_M2_Smoke_Red"
 		};
@@ -1748,8 +1751,103 @@ class CfgVehicles
 		{
 			"SC_Vest_WP_Light_Urban",
 			"SC_Beret_SE_v2",
-			"OPTRE_HUD_r_Glasses"
+			"OPTRE_HUD_r_Glasses",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"TFAR_fadak"
 		};
+		class WBK_Combine_MR_SLD: WBK_Combine_Ordinal
+		{
+			WBK_BehaveLikeHuman="true";
+			WBK_CustomHPparam=0;
+			displayName="Солдат КМН";
+			uniformClass="WHC76_Camo_2_Uniform";
+			backpack="Wasp_GRFlat_Pack";
+			weapons[]=
+			{
+				"OPTRE_MA32",
+				"OPTRE_M393_EOTECH",
+				"Throw",
+				"Put"
+			};
+			magazines[]=
+			{
+				"OPTRE_32Rnd_762x51_Mag",
+				"OPTRE_32Rnd_762x51_Mag",
+				"OPTRE_32Rnd_762x51_Mag",
+				"OPTRE_32Rnd_762x51_Mag",
+				"OPTRE_32Rnd_762x51_Mag",
+				"OPTRE_32Rnd_762x51_Mag",
+				"OPTRE_32Rnd_762x51_Mag",
+				"OPTRE_32Rnd_762x51_Mag",
+				"OPTRE_32Rnd_762x51_Mag",
+				"SC_IG3",
+				"SC_IG3",
+				"OPTRE_M2_Smoke"
+			};
+			items[]=
+			{
+				"ACE_morphine",
+				"ACE_morphine",
+				"ACE_elasticBandage",
+				"ACE_elasticBandage",
+				"ACE_elasticBandage",
+				"ACE_elasticBandage",
+				"ACE_elasticBandage",
+				"ACE_elasticBandage",
+				"ACE_elasticBandage",
+				"ACE_elasticBandage",
+				"ACE_elasticBandage",
+				"ACE_elasticBandage",
+				"ACE_elasticBandage",
+				"ACE_elasticBandage",
+				"ACE_elasticBandage",
+				"ACE_elasticBandage",
+				"ACE_elasticBandage",
+				"ACE_fieldDressing",
+				"ACE_fieldDressing",
+				"ACE_fieldDressing",
+				"ACE_fieldDressing",
+				"ACE_fieldDressing",
+				"ACE_fieldDressing",
+				"ACE_fieldDressing",
+				"ACE_fieldDressing",
+				"ACE_fieldDressing",
+				"ACE_fieldDressing",
+				"ACE_fieldDressing",
+				"ACE_fieldDressing",
+				"ACE_fieldDressing",
+				"ACE_fieldDressing",
+				"ACE_fieldDressing",
+				"ACE_packingBandage",
+				"ACE_packingBandage",
+				"ACE_packingBandage",
+				"ACE_packingBandage",
+				"ACE_packingBandage",
+				"ACE_packingBandage",
+				"ACE_packingBandage",
+				"ACE_packingBandage",
+				"ACE_packingBandage",
+				"ACE_packingBandage",
+				"ACE_packingBandage",
+				"ACE_packingBandage",
+				"ACE_packingBandage",
+				"ACE_packingBandage",
+				"ACE_packingBandage",
+				"ACE_tourniquet",
+				"ACE_tourniquet",
+				"ACE_EntrenchingTool"
+			};
+			linkedItems[]=
+			{
+				"Wasp_GRFlat_Light",
+				"SC_Helmet_WP_GRFlat_VU",
+				"ItemMap",
+				"ItemCompass",
+				"ItemWatch",
+				"TFAR_fadak"
+			};
 	};
 	class O_Survivor_F;
 	class WBK_Rebel_HL2_SMG_1: O_Survivor_F

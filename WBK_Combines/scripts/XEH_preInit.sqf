@@ -1254,7 +1254,7 @@ _target setVariable ["WBK_IsTargetMarked",1];
 ["Our benefactors", "WBK_OrdinalScout", ["Mark targets for squad/Request marking targets", "Mark targets in your screen range for your squad"], {
 _unit = missionNamespace getVariable["bis_fnc_moduleRemoteControl_unit", player];
 if ((lifeState _unit == "INCAPACITATED") or !(isTouchingGround _unit)) exitWith {};
-if ((_unit getVariable "WBK_CombineType" != " ordinal_") and (_unit getVariable "WBK_CombineType" != " assasin_")) exitWith {
+if ((_unit getVariable "WBK_CombineType" != " ordinal_") and (_unit getVariable "WBK_CombineType" != " assasin_") and (_unit getVariable "WBK_CombineType" != " mro_")) exitWith {
 if (
 (_unit getVariable "WBK_CombineType" == " rebel_") or
 (_unit getVariable "WBK_CombineType" == " HECU_") or
