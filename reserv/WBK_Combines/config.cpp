@@ -42,8 +42,7 @@ class CfgPatches
 			"WBK_Combine_CP_SB",
 			"WBK_Combine_CP_SMG",
 			"WBK_Combine_ASS_SMG",
-			"WBK_Combine_ASS_Sniper",
-			"WBK_Combine_MR_OFF"
+			"WBK_Combine_ASS_Sniper"
 		};
 		weapons[]=
 		{
@@ -320,36 +319,36 @@ class CfgVehicles
 	{
 		WBK_CustomHPparam=100;
 		WBK_CombineType=" ordinal_";
-		displayName="SE Офицер";
+		displayName="Ordinal";
 		faction="WBK_HL_Combines";
 		editorSubcategory="WBK_HLA_Combines";
 		_generalMacro="WBK_HL_Combines";
-		uniformClass="SC_Undersuit_Black";
-		backpack="SC_Backpack_WP_Guard_SL";
+		uniformClass="CombainOrdenal_Uniform_1";
+		backpack="OrdenalBackpack";
 		weapons[]=
 		{
-			"SC_Rifle_ARG47",
+			"HLA_Ordinal_AR1",
 			"Throw",
 			"Put"
 		};
 		magazines[]=
 		{
-			"SC_30Rnd_Shrapnel_Mag_Cyan",
-			"SC_30Rnd_Shrapnel_Mag_Cyan",
-			"SC_30Rnd_Shrapnel_Mag_Cyan",
-			"SC_30Rnd_Shrapnel_Mag_Cyan",
-			"SC_30Rnd_Shrapnel_Mag_Cyan",
-			"SC_30Rnd_Shrapnel_Mag_Cyan",
-			"SC_30Rnd_Shrapnel_Mag_Cyan",
-			"SC_30Rnd_Shrapnel_Mag_Cyan",
-			"SC_30Rnd_Shrapnel_Mag_Cyan",
-			"SC_30Rnd_Shrapnel_Mag_Cyan",
-			"SC_30Rnd_Shrapnel_Mag_Cyan",
-			"SC_30Rnd_Shrapnel_Mag_Cyan",
-			"SC_30Rnd_Shrapnel_Mag_Cyan",
-			"SC_30Rnd_Shrapnel_Mag_Cyan",
-			"SC_30Rnd_Shrapnel_Mag_Cyan",
-			"SC_30Rnd_Shrapnel_Mag_Cyan",
+			"HL_CMB_30Rnd_AR2_Mag",
+			"HL_CMB_30Rnd_AR2_Mag",
+			"HL_CMB_30Rnd_AR2_Mag",
+			"HL_CMB_30Rnd_AR2_Mag",
+			"HL_CMB_30Rnd_AR2_Mag",
+			"HL_CMB_30Rnd_AR2_Mag",
+			"HL_CMB_30Rnd_AR2_Mag",
+			"HL_CMB_30Rnd_AR2_Mag",
+			"HL_CMB_30Rnd_AR2_Mag",
+			"HL_CMB_30Rnd_AR2_Mag",
+			"HL_CMB_1Rnd_AR2_Comball",
+			"HL_CMB_1Rnd_AR2_Comball",
+			"HL_CMB_30Rnd_AR2_Mag",
+			"HL_CMB_30Rnd_AR2_Mag",
+			"HL_CMB_30Rnd_AR2_Mag",
+			"HL_CMB_30Rnd_AR2_Mag",
 			"HandGrenade",
 			"HandGrenade",
 			"SmokeShell",
@@ -357,22 +356,16 @@ class CfgVehicles
 			"SmokeShell",
 			"SmokeShellPurple"
 		};
-		items[]=
-		{
-			"WBK_Health_Syringe",
-			"WBK_Health_Syringe",
-			"WBK_Health_Syringe",
-			"WBK_Health_Battery",
-			"optic_aco_smg"
-		};
+		items[]={};
 		linkedItems[]=
 		{
-			"SC_Vest_WP_Medium_Guard",
-			"SC_Helmet_WP_EUD_Guard_VU",
+			"CombainOrdenal_vest",
+			"CombainOrdenal",
+			"G_Balaclava_TI_blk_F",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",
-			"TFAR_fadak"
+			"ItemRadio"
 		};
 		class SoundBreath
 		{
@@ -585,9 +578,9 @@ class CfgVehicles
 	{
 		WBK_CustomHPparam=150;
 		WBK_CombineType=" apf_";
-		displayName="SE Подавитель";
-		uniformClass="SC_Undersuit_Black";
-		backpack="SC_Backpack_WP_Guard";
+		displayName="APF";
+		uniformClass="CombainSuppressor_Uniform_1";
+		backpack="";
 		weapons[]=
 		{
 			"HLA_APF_LMG",
@@ -598,24 +591,17 @@ class CfgVehicles
 		{
 			"HLA_APF_Mag",
 			"HLA_APF_Mag",
-			"HLA_APF_Mag",
-			"HLA_APF_Mag",
 			"HLA_APF_Mag"
 		};
-		items[]=
-		{
-			"WBK_Health_Syringe",
-			"WBK_Health_Syringe",
-			"WBK_Health_Battery"
-		};
+		items[]={};
 		linkedItems[]=
 		{
-			"SC_Vest_WP_Heavy_Guard",
-			"SC_Helmet_RN_Guard",
+			"HLA_Vest_CombineAPF",
+			"HLA_Headgear_CombineApf",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",
-			"TFAR_fadak"
+			"ItemRadio"
 		};
 	};
 	class WBK_Combine_Walhammer: WBK_Combine_Ordinal
@@ -625,10 +611,10 @@ class CfgVehicles
 		{
 			generic[]=
 			{
-
+				
 				{
 					"run",
-
+					
 					{
 						"\WBK_HalfLifeSounds\Sounds\heavy_stomp_run_3.wav",
 						1,
@@ -636,10 +622,10 @@ class CfgVehicles
 						30
 					}
 				},
-
+				
 				{
 					"run",
-
+					
 					{
 						"\WBK_HalfLifeSounds\Sounds\heavy_stomp_run_2.wav",
 						1,
@@ -647,10 +633,10 @@ class CfgVehicles
 						30
 					}
 				},
-
+				
 				{
 					"run",
-
+					
 					{
 						"\WBK_HalfLifeSounds\Sounds\heavy_stomp_run_1.wav",
 						1,
@@ -658,10 +644,10 @@ class CfgVehicles
 						30
 					}
 				},
-
+				
 				{
 					"walk",
-
+					
 					{
 						"\WBK_HalfLifeSounds\Sounds\heavy_stomp_walk_3.wav",
 						1,
@@ -669,10 +655,10 @@ class CfgVehicles
 						20
 					}
 				},
-
+				
 				{
 					"walk",
-
+					
 					{
 						"\WBK_HalfLifeSounds\Sounds\heavy_stomp_walk_2.wav",
 						1,
@@ -680,10 +666,10 @@ class CfgVehicles
 						20
 					}
 				},
-
+				
 				{
 					"walk",
-
+					
 					{
 						"\WBK_HalfLifeSounds\Sounds\heavy_stomp_walk_1.wav",
 						1,
@@ -691,10 +677,10 @@ class CfgVehicles
 						20
 					}
 				},
-
+				
 				{
 					"sprint",
-
+					
 					{
 						"\WBK_HalfLifeSounds\Sounds\heavy_stomp_1.wav",
 						1.2,
@@ -702,10 +688,10 @@ class CfgVehicles
 						40
 					}
 				},
-
+				
 				{
 					"sprint",
-
+					
 					{
 						"\WBK_HalfLifeSounds\Sounds\heavy_stomp_2.wav",
 						1.2,
@@ -713,10 +699,10 @@ class CfgVehicles
 						40
 					}
 				},
-
+				
 				{
 					"sprint",
-
+					
 					{
 						"\WBK_HalfLifeSounds\Sounds\heavy_stomp_3.wav",
 						1.2,
@@ -724,10 +710,10 @@ class CfgVehicles
 						40
 					}
 				},
-
+				
 				{
 					"tactical",
-
+					
 					{
 						"\WBK_HalfLifeSounds\Sounds\heavy_stomp_run_3.wav",
 						1,
@@ -735,10 +721,10 @@ class CfgVehicles
 						30
 					}
 				},
-
+				
 				{
 					"tactical",
-
+					
 					{
 						"\WBK_HalfLifeSounds\Sounds\heavy_stomp_run_2.wav",
 						1,
@@ -746,10 +732,10 @@ class CfgVehicles
 						30
 					}
 				},
-
+				
 				{
 					"tactical",
-
+					
 					{
 						"\WBK_HalfLifeSounds\Sounds\heavy_stomp_run_1.wav",
 						1,
@@ -757,21 +743,21 @@ class CfgVehicles
 						30
 					}
 				},
-
+				
 				{
 					"\WBK_HalfLifeSounds\Sounds\heavy_stomp_run_3.wav",
 					1,
 					1,
 					20
 				},
-
+				
 				{
 					"\WBK_HalfLifeSounds\Sounds\heavy_stomp_run_1.wav",
 					1,
 					1,
 					20
 				},
-
+				
 				{
 					"\WBK_HalfLifeSounds\Sounds\heavy_stomp_run_2.wav",
 					1,
@@ -784,10 +770,10 @@ class CfgVehicles
 		{
 			soldier[]=
 			{
-
+				
 				{
 					"run",
-
+					
 					{
 						"\WBK_HalfLifeSounds\Sounds\heavy_stomp_run_3.wav",
 						1,
@@ -795,10 +781,10 @@ class CfgVehicles
 						30
 					}
 				},
-
+				
 				{
 					"run",
-
+					
 					{
 						"\WBK_HalfLifeSounds\Sounds\heavy_stomp_run_2.wav",
 						1,
@@ -806,10 +792,10 @@ class CfgVehicles
 						30
 					}
 				},
-
+				
 				{
 					"run",
-
+					
 					{
 						"\WBK_HalfLifeSounds\Sounds\heavy_stomp_run_1.wav",
 						1,
@@ -817,10 +803,10 @@ class CfgVehicles
 						30
 					}
 				},
-
+				
 				{
 					"walk",
-
+					
 					{
 						"\WBK_HalfLifeSounds\Sounds\heavy_stomp_walk_3.wav",
 						1,
@@ -828,10 +814,10 @@ class CfgVehicles
 						20
 					}
 				},
-
+				
 				{
 					"walk",
-
+					
 					{
 						"\WBK_HalfLifeSounds\Sounds\heavy_stomp_walk_2.wav",
 						1,
@@ -839,10 +825,10 @@ class CfgVehicles
 						20
 					}
 				},
-
+				
 				{
 					"walk",
-
+					
 					{
 						"\WBK_HalfLifeSounds\Sounds\heavy_stomp_walk_1.wav",
 						1,
@@ -850,10 +836,10 @@ class CfgVehicles
 						20
 					}
 				},
-
+				
 				{
 					"sprint",
-
+					
 					{
 						"\WBK_HalfLifeSounds\Sounds\heavy_stomp_1.wav",
 						1.2,
@@ -861,10 +847,10 @@ class CfgVehicles
 						40
 					}
 				},
-
+				
 				{
 					"sprint",
-
+					
 					{
 						"\WBK_HalfLifeSounds\Sounds\heavy_stomp_2.wav",
 						1.2,
@@ -872,10 +858,10 @@ class CfgVehicles
 						40
 					}
 				},
-
+				
 				{
 					"sprint",
-
+					
 					{
 						"\WBK_HalfLifeSounds\Sounds\heavy_stomp_3.wav",
 						1.2,
@@ -883,10 +869,10 @@ class CfgVehicles
 						40
 					}
 				},
-
+				
 				{
 					"tactical",
-
+					
 					{
 						"\WBK_HalfLifeSounds\Sounds\heavy_stomp_run_3.wav",
 						1,
@@ -894,10 +880,10 @@ class CfgVehicles
 						30
 					}
 				},
-
+				
 				{
 					"tactical",
-
+					
 					{
 						"\WBK_HalfLifeSounds\Sounds\heavy_stomp_run_2.wav",
 						1,
@@ -905,10 +891,10 @@ class CfgVehicles
 						30
 					}
 				},
-
+				
 				{
 					"tactical",
-
+					
 					{
 						"\WBK_HalfLifeSounds\Sounds\heavy_stomp_run_1.wav",
 						1,
@@ -916,21 +902,21 @@ class CfgVehicles
 						30
 					}
 				},
-
+				
 				{
 					"\WBK_HalfLifeSounds\Sounds\heavy_stomp_run_3.wav",
 					1,
 					1,
 					20
 				},
-
+				
 				{
 					"\WBK_HalfLifeSounds\Sounds\heavy_stomp_run_1.wav",
 					1,
 					1,
 					20
 				},
-
+				
 				{
 					"\WBK_HalfLifeSounds\Sounds\heavy_stomp_run_2.wav",
 					1,
@@ -940,49 +926,63 @@ class CfgVehicles
 			};
 		};
 		WBK_CombineType=" charger_";
-		displayName="SE Молотобоец";
-		uniformClass="SC_Undersuit_Black";
-		backpack="SC_Backpack_WP_Guard";
+		displayName="Wallhammer";
+		uniformClass="CombainWallhamer_Uniform_1";
+		backpack="";
 		weapons[]=
 		{
-			"SC_Rifle_SG7",
+			"HLA_ChargerShotGun",
+			"IMS_HL_StunBaton",
 			"Throw",
 			"Put"
 		};
 		magazines[]=
 		{
-			"SC_12Rnd_12Gauge_Pellets",
-			"SC_12Rnd_12Gauge_Pellets",
-			"SC_12Rnd_12Gauge_Pellets",
-			"SC_12Rnd_12Gauge_Pellets",
-			"SC_12Rnd_12Gauge_Pellets",
-			"SC_12Rnd_12Gauge_Pellets",
-			"SC_12Rnd_12Gauge_Pellets",
-			"SC_12Rnd_12Gauge_Pellets",
-			"SC_12Rnd_12Gauge_Slugs",
-			"SC_12Rnd_12Gauge_Slugs",
-			"SC_12Rnd_12Gauge_Slugs",
-			"SC_12Rnd_12Gauge_Slugs",
-			"SC_12Rnd_12Gauge_Slugs",
-			"SC_12Rnd_12Gauge_Slugs"
+			"HL_CMB_6Rnd_12gBuckshot",
+			"HL_CMB_6Rnd_12gBuckshot",
+			"HL_CMB_6Rnd_12gBuckshot",
+			"HL_CMB_6Rnd_12gBuckshot",
+			"HL_CMB_6Rnd_12gBuckshot",
+			"HL_CMB_6Rnd_12gBuckshot",
+			"HL_CMB_6Rnd_12gBuckshot",
+			"HL_CMB_6Rnd_12gBuckshot",
+			"HL_CMB_6Rnd_12gBuckshot",
+			"HL_CMB_6Rnd_12gBuckshot",
+			"HL_CMB_6Rnd_12gBuckshot",
+			"HL_CMB_6Rnd_12gBuckshot",
+			"HL_CMB_6Rnd_12gBuckshot",
+			"HL_CMB_6Rnd_12gBuckshot",
+			"HL_CMB_6Rnd_12gBuckshot",
+			"HL_CMB_6Rnd_12gBuckshot",
+			"HL_CMB_6Rnd_12gBuckshot",
+			"HL_CMB_6Rnd_12gBuckshot",
+			"HL_CMB_6Rnd_12gBuckshot",
+			"HL_CMB_6Rnd_12gBuckshot",
+			"HL_CMB_6Rnd_12gBuckshot",
+			"HL_CMB_6Rnd_12gBuckshot",
+			"HL_CMB_6Rnd_12gBuckshot",
+			"HL_CMB_6Rnd_12gBuckshot",
+			"HL_CMB_6Rnd_12gBuckshot",
+			"HL_CMB_6Rnd_12gBuckshot",
+			"HL_CMB_6Rnd_12gBuckshot",
+			"HL_CMB_6Rnd_12gBuckshot",
+			"HL_CMB_6Rnd_12gBuckshot",
+			"HL_CMB_6Rnd_12gBuckshot",
+			"HL_CMB_6Rnd_12gBuckshot",
+			"HL_CMB_6Rnd_12gBuckshot",
+			"HL_CMB_6Rnd_12gBuckshot",
+			"HL_CMB_6Rnd_12gBuckshot",
+			"HL_CMB_6Rnd_12gBuckshot"
 		};
-		items[]=
-		{
-			"WBK_Health_Syringe",
-			"WBK_Health_Syringe",
-			"WBK_Health_Syringe",
-			"WBK_Health_Battery",
-			"WBK_Health_Battery"
-		};
+		items[]={};
 		linkedItems[]=
 		{
-			"SC_Vest_WP_Heavy_Guard",
-			"SC_Helmet_Crusader_MFlat_V",
-			"SC_Backpack_WP_Guard",
+			"CombainWallhammer_vest",
+			"HLA_Headgear_CombineCharger",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",
-			"TFAR_fadak"
+			"ItemRadio"
 		};
 	};
 	class WBK_Combine_Grunt: WBK_Combine_Ordinal
@@ -990,126 +990,44 @@ class CfgVehicles
 		WBK_CustomHPparam=70;
 		WBK_CombineType=" grunt_";
 		WBK_BehaveLikeHuman="true";
-		displayName="SE Солдат";
-		uniformClass="SC_Undersuit_Black";
-		backpack="SC_Backpack_WP_Guard";
+		displayName="Grunt (Dark)";
+		uniformClass="Combaine_Body_01";
+		backpack="Combaine_backpack";
 		weapons[]=
 		{
-			"SC_Rifle_AR12",
+			"HLA_Grunt_AR1SMG",
 			"Throw",
 			"Put"
 		};
 		magazines[]=
 		{
-			"SC_35Rnd_762x51_Mag",
+			"HL_CMB_30Rnd_AR2_Mag",
 			"Chemlight_green",
-			"SC_35Rnd_762x51_Mag",
-			"SC_35Rnd_762x51_Mag",
-			"SC_35Rnd_762x51_Mag",
-			"SC_IG3",
-			"SC_IG3",
-			"OPTRE_M2_Smoke",
-			"OPTRE_M2_Smoke",
-			"SC_35Rnd_762x51_Mag",
-			"SC_35Rnd_762x51_Mag",
-			"SC_35Rnd_762x51_Mag",
-			"SC_35Rnd_762x51_Mag",
-			"SC_35Rnd_762x51_Mag",
-			"SC_35Rnd_762x51_Mag",
-			"SC_35Rnd_762x51_Mag",
-			"SC_35Rnd_762x51_Mag",
-			"SC_35Rnd_762x51_Mag",
-			"SC_35Rnd_762x51_Mag"
+			"HL_CMB_30Rnd_AR2_Mag",
+			"HL_CMB_30Rnd_AR2_Mag",
+			"HL_CMB_30Rnd_AR2_Mag",
+			"HandGrenade",
+			"HandGrenade",
+			"HL_CMB_30Rnd_AR2_Mag",
+			"HL_CMB_30Rnd_AR2_Mag",
+			"HL_CMB_30Rnd_AR2_Mag",
+			"HL_CMB_30Rnd_AR2_Mag",
+			"HL_CMB_30Rnd_AR2_Mag",
+			"HL_CMB_30Rnd_AR2_Mag",
+			"HL_CMB_30Rnd_AR2_Mag",
+			"HL_CMB_30Rnd_AR2_Mag",
+			"HL_CMB_30Rnd_AR2_Mag",
+			"HL_CMB_30Rnd_AR2_Mag"
 		};
-		items[]=
-		{
-			"ACE_epinephrine",
-			"ACE_epinephrine",
-			"ACE_morphine",
-			"ACE_morphine",
-			"ACE_morphine",
-			"ACE_elasticBandage",
-			"ACE_elasticBandage",
-			"ACE_elasticBandage",
-			"ACE_elasticBandage",
-			"ACE_elasticBandage",
-			"ACE_elasticBandage",
-			"ACE_elasticBandage",
-			"ACE_elasticBandage",
-			"ACE_elasticBandage",
-			"ACE_elasticBandage",
-			"ACE_elasticBandage",
-			"ACE_elasticBandage",
-			"ACE_elasticBandage",
-			"ACE_elasticBandage",
-			"ACE_elasticBandage",
-			"ACE_elasticBandage",
-			"ACE_elasticBandage",
-			"ACE_elasticBandage",
-			"ACE_elasticBandage",
-			"ACE_elasticBandage",
-			"ACE_fieldDressing",
-			"ACE_fieldDressing",
-			"ACE_fieldDressing",
-			"ACE_fieldDressing",
-			"ACE_fieldDressing",
-			"ACE_fieldDressing",
-			"ACE_fieldDressing",
-			"ACE_fieldDressing",
-			"ACE_fieldDressing",
-			"ACE_fieldDressing",
-			"ACE_fieldDressing",
-			"ACE_fieldDressing",
-			"ACE_fieldDressing",
-			"ACE_fieldDressing",
-			"ACE_fieldDressing",
-			"ACE_fieldDressing",
-			"ACE_fieldDressing",
-			"ACE_fieldDressing",
-			"ACE_fieldDressing",
-			"ACE_fieldDressing",
-			"ACE_packingBandage",
-			"ACE_packingBandage",
-			"ACE_packingBandage",
-			"ACE_packingBandage",
-			"ACE_packingBandage",
-			"ACE_packingBandage",
-			"ACE_packingBandage",
-			"ACE_packingBandage",
-			"ACE_packingBandage",
-			"ACE_packingBandage",
-			"ACE_packingBandage",
-			"ACE_packingBandage",
-			"ACE_packingBandage",
-			"ACE_packingBandage",
-			"ACE_packingBandage",
-			"ACE_packingBandage",
-			"ACE_packingBandage",
-			"ACE_packingBandage",
-			"ACE_packingBandage",
-			"ACE_packingBandage",
-			"ACE_tourniquet",
-			"ACE_tourniquet",
-			"ACE_tourniquet",
-			"ACE_tourniquet",
-			"ACE_EntrenchingTool",
-			"ACE_salineIV_500",
-			"ACE_salineIV_500",
-			"ACE_salineIV_500",
-			"ACE_salineIV_500",
-			"ACE_salineIV_500",
-			"ACE_splint",
-			"ACE_splint",
-			"SC_T1"
-		};
+		items[]={};
 		linkedItems[]=
 		{
-			"SC_Helmet_WP_EUD_Guard_VU",
-			"SC_Vest_WP_Light_Guard",
+			"Combaine_helmet",
+			"G_Balaclava_TI_blk_F",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",
-			"TFAR_fadak"
+			"ItemRadio"
 		};
 	};
 	class WBK_Combine_Grunt_White: WBK_Combine_Ordinal
@@ -1117,122 +1035,44 @@ class CfgVehicles
 		WBK_CustomHPparam=70;
 		WBK_CombineType=" grunt_";
 		WBK_BehaveLikeHuman="true";
-		displayName="SE Солдат(Дробовик)";
-		uniformClass="SC_Undersuit_Black";
-		backpack="SC_Backpack_WP_Guard";
+		displayName="Grunt (White)";
+		uniformClass="Combaine_Body_02";
+		backpack="Combaine_backpack_white";
 		weapons[]=
 		{
-			"OPTRE_M45ATAC",
+			"HLA_Grunt_AR1SMG",
 			"Throw",
 			"Put"
 		};
 		magazines[]=
 		{
-			"OPTRE_12Rnd_8Gauge_Pellets",
-			"OPTRE_12Rnd_8Gauge_Pellets",
-			"OPTRE_12Rnd_8Gauge_Pellets",
-			"OPTRE_12Rnd_8Gauge_Pellets",
-			"OPTRE_12Rnd_8Gauge_Pellets",
-			"SC_IG3",
-			"SC_IG3",
-			"OPTRE_M2_Smoke",
-			"OPTRE_M2_Smoke",
-			"OPTRE_12Rnd_8Gauge_Slugs",
-			"OPTRE_12Rnd_8Gauge_Slugs",
-			"OPTRE_12Rnd_8Gauge_Slugs",
-			"OPTRE_12Rnd_8Gauge_Slugs",
-			"OPTRE_12Rnd_8Gauge_Slugs",
-			"OPTRE_12Rnd_8Gauge_Slugs",
-			"OPTRE_12Rnd_8Gauge_Pellets",
-			"OPTRE_12Rnd_8Gauge_Pellets",
+			"HL_CMB_30Rnd_AR2_Mag",
+			"Chemlight_green",
+			"HL_CMB_30Rnd_AR2_Mag",
+			"HL_CMB_30Rnd_AR2_Mag",
+			"HL_CMB_30Rnd_AR2_Mag",
+			"HandGrenade",
+			"HandGrenade",
+			"HL_CMB_30Rnd_AR2_Mag",
+			"HL_CMB_30Rnd_AR2_Mag",
+			"HL_CMB_30Rnd_AR2_Mag",
+			"HL_CMB_30Rnd_AR2_Mag",
+			"HL_CMB_30Rnd_AR2_Mag",
+			"HL_CMB_30Rnd_AR2_Mag",
+			"HL_CMB_30Rnd_AR2_Mag",
+			"HL_CMB_30Rnd_AR2_Mag",
+			"HL_CMB_30Rnd_AR2_Mag",
+			"HL_CMB_30Rnd_AR2_Mag"
 		};
-		items[]=
-		{
-			"ACE_epinephrine",
-			"ACE_epinephrine",
-			"ACE_morphine",
-			"ACE_morphine",
-			"ACE_morphine",
-			"ACE_elasticBandage",
-			"ACE_elasticBandage",
-			"ACE_elasticBandage",
-			"ACE_elasticBandage",
-			"ACE_elasticBandage",
-			"ACE_elasticBandage",
-			"ACE_elasticBandage",
-			"ACE_elasticBandage",
-			"ACE_elasticBandage",
-			"ACE_elasticBandage",
-			"ACE_elasticBandage",
-			"ACE_elasticBandage",
-			"ACE_elasticBandage",
-			"ACE_elasticBandage",
-			"ACE_elasticBandage",
-			"ACE_elasticBandage",
-			"ACE_elasticBandage",
-			"ACE_elasticBandage",
-			"ACE_elasticBandage",
-			"ACE_elasticBandage",
-			"ACE_fieldDressing",
-			"ACE_fieldDressing",
-			"ACE_fieldDressing",
-			"ACE_fieldDressing",
-			"ACE_fieldDressing",
-			"ACE_fieldDressing",
-			"ACE_fieldDressing",
-			"ACE_fieldDressing",
-			"ACE_fieldDressing",
-			"ACE_fieldDressing",
-			"ACE_fieldDressing",
-			"ACE_fieldDressing",
-			"ACE_fieldDressing",
-			"ACE_fieldDressing",
-			"ACE_fieldDressing",
-			"ACE_fieldDressing",
-			"ACE_fieldDressing",
-			"ACE_fieldDressing",
-			"ACE_fieldDressing",
-			"ACE_fieldDressing",
-			"ACE_packingBandage",
-			"ACE_packingBandage",
-			"ACE_packingBandage",
-			"ACE_packingBandage",
-			"ACE_packingBandage",
-			"ACE_packingBandage",
-			"ACE_packingBandage",
-			"ACE_packingBandage",
-			"ACE_packingBandage",
-			"ACE_packingBandage",
-			"ACE_packingBandage",
-			"ACE_packingBandage",
-			"ACE_packingBandage",
-			"ACE_packingBandage",
-			"ACE_packingBandage",
-			"ACE_packingBandage",
-			"ACE_packingBandage",
-			"ACE_packingBandage",
-			"ACE_packingBandage",
-			"ACE_packingBandage",
-			"ACE_tourniquet",
-			"ACE_tourniquet",
-			"ACE_tourniquet",
-			"ACE_tourniquet",
-			"ACE_EntrenchingTool",
-			"ACE_salineIV_500",
-			"ACE_salineIV_500",
-			"ACE_salineIV_500",
-			"ACE_salineIV_500",
-			"ACE_salineIV_500",
-			"ACE_splint",
-			"ACE_splint"
-		};
+		items[]={};
 		linkedItems[]=
 		{
-			"SC_Helmet_WP_EUD_Guard_VU",
+			"Combaine_helmet_White",
+			"G_Balaclava_TI_blk_F",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",
-			"TFAR_fadak"
+			"ItemRadio"
 		};
 	};
 	class WBK_Combine_CP_P: WBK_Combine_Ordinal
@@ -1661,94 +1501,6 @@ class CfgVehicles
 		{
 			"HL_CMB_V_OW_E",
 			"HL_CMB_H_OW_E"
-		};
-	};
-	class WBK_Combine_MR_OFF: WBK_Combine_Ordinal
-	{
-		WBK_BehaveLikeHuman="true";
-		WBK_CustomHPparam=50;
-		WBK_CombineType=" COMBINE_";
-		displayName="Офицер КМН";
-		uniformClass="WHC76_Officer_Uniform";
-		backpack="";
-		weapons[]=
-		{
-			"SC_Rifle_Ravager",
-			"Throw",
-			"Put"
-		};
-		magazines[]=
-		{
-			"SC_Reflex_C1_Red",
-			"SC_Reflex_C1_Red",
-			"SC_Reflex_C1_Red",
-			"SC_Reflex_C1_Red",
-			"SC_Reflex_C1_Red",
-			"SC_Reflex_C1_Red",
-			"SC_Reflex_C1_Red",
-			"SC_Reflex_C1_Red",
-			"SC_Reflex_C1_Red",
-			"OPTRE_M2_Smoke_Orange",
-			"OPTRE_M2_Smoke_Red"
-		};
-		items[]=
-		{
-			"ACE_morphine",
-			"ACE_morphine",
-			"ACE_elasticBandage",
-			"ACE_elasticBandage",
-			"ACE_elasticBandage",
-			"ACE_elasticBandage",
-			"ACE_elasticBandage",
-			"ACE_elasticBandage",
-			"ACE_elasticBandage",
-			"ACE_elasticBandage",
-			"ACE_elasticBandage",
-			"ACE_elasticBandage",
-			"ACE_elasticBandage",
-			"ACE_elasticBandage",
-			"ACE_elasticBandage",
-			"ACE_elasticBandage",
-			"ACE_elasticBandage",
-			"ACE_fieldDressing",
-			"ACE_fieldDressing",
-			"ACE_fieldDressing",
-			"ACE_fieldDressing",
-			"ACE_fieldDressing",
-			"ACE_fieldDressing",
-			"ACE_fieldDressing",
-			"ACE_fieldDressing",
-			"ACE_fieldDressing",
-			"ACE_fieldDressing",
-			"ACE_fieldDressing",
-			"ACE_fieldDressing",
-			"ACE_fieldDressing",
-			"ACE_fieldDressing",
-			"ACE_fieldDressing",
-			"ACE_packingBandage",
-			"ACE_packingBandage",
-			"ACE_packingBandage",
-			"ACE_packingBandage",
-			"ACE_packingBandage",
-			"ACE_packingBandage",
-			"ACE_packingBandage",
-			"ACE_packingBandage",
-			"ACE_packingBandage",
-			"ACE_packingBandage",
-			"ACE_packingBandage",
-			"ACE_packingBandage",
-			"ACE_packingBandage",
-			"ACE_packingBandage",
-			"ACE_packingBandage",
-			"ACE_tourniquet",
-			"ACE_tourniquet",
-			"ACE_EntrenchingTool"
-		};
-		linkedItems[]=
-		{
-			"SC_Vest_WP_Light_Urban",
-			"SC_Beret_SE_v2",
-			"OPTRE_HUD_r_Glasses"
 		};
 	};
 	class O_Survivor_F;
@@ -6995,12 +6747,12 @@ class cfgSoundShaders
 	{
 		samples[]=
 		{
-
+			
 			{
 				"\WBK_Combines\weapons\sounds\AR2_fire1",
 				1
 			},
-
+			
 			{
 				"\WBK_Combines\weapons\sounds\AR2_fire2",
 				1
@@ -7020,22 +6772,22 @@ class cfgSoundShaders
 	{
 		samples[]=
 		{
-
+			
 			{
 				"\WBK_Combines\weapons\sounds\ar_dist_1",
 				1
 			},
-
+			
 			{
 				"\WBK_Combines\weapons\sounds\ar_dist_2",
 				1
 			},
-
+			
 			{
 				"\WBK_Combines\weapons\sounds\ar_dist_3",
 				1
 			},
-
+			
 			{
 				"\WBK_Combines\weapons\sounds\ar_dist_4",
 				1
@@ -7055,17 +6807,17 @@ class cfgSoundShaders
 	{
 		samples[]=
 		{
-
+			
 			{
 				"\WBK_Combines\weapons\sounds\shotgun_fire1",
 				1
 			},
-
+			
 			{
 				"\WBK_Combines\weapons\sounds\shotgun_fire2",
 				1
 			},
-
+			
 			{
 				"\WBK_Combines\weapons\sounds\shotgun_fire3",
 				1
@@ -7076,7 +6828,7 @@ class cfgSoundShaders
 	{
 		samples[]=
 		{
-
+			
 			{
 				"\WBK_Combines\weapons\sounds\shotgun_dist",
 				1
@@ -7087,17 +6839,17 @@ class cfgSoundShaders
 	{
 		samples[]=
 		{
-
+			
 			{
 				"\WBK_Combines\weapons\sounds\smg1_fire1",
 				1
 			},
-
+			
 			{
 				"\WBK_Combines\weapons\sounds\smg1_fire2",
 				1
 			},
-
+			
 			{
 				"\WBK_Combines\weapons\sounds\smg1_fire3",
 				1
@@ -7108,7 +6860,7 @@ class cfgSoundShaders
 	{
 		samples[]=
 		{
-
+			
 			{
 				"\WBK_Combines\weapons\sounds\smg_dist",
 				1
@@ -7119,17 +6871,17 @@ class cfgSoundShaders
 	{
 		samples[]=
 		{
-
+			
 			{
 				"\WBK_Combines\weapons\sounds\player_pistol_fire1",
 				1
 			},
-
+			
 			{
 				"\WBK_Combines\weapons\sounds\player_pistol_fire2",
 				1
 			},
-
+			
 			{
 				"\WBK_Combines\weapons\sounds\player_pistol_fire3",
 				1
@@ -7140,7 +6892,7 @@ class cfgSoundShaders
 	{
 		samples[]=
 		{
-
+			
 			{
 				"\WBK_Combines\weapons\sounds\pist_dist",
 				1
@@ -7151,22 +6903,22 @@ class cfgSoundShaders
 	{
 		samples[]=
 		{
-
+			
 			{
 				"\WBK_Combines\weapons\sounds\ar1_fire_1",
 				1
 			},
-
+			
 			{
 				"\WBK_Combines\weapons\sounds\ar1_fire_2",
 				1
 			},
-
+			
 			{
 				"\WBK_Combines\weapons\sounds\ar1_fire_3",
 				1
 			},
-
+			
 			{
 				"\WBK_Combines\weapons\sounds\ar1_fire_4",
 				1
@@ -7177,22 +6929,22 @@ class cfgSoundShaders
 	{
 		samples[]=
 		{
-
+			
 			{
 				"\WBK_Combines\weapons\sounds\pulseSmg_fire_1",
 				1
 			},
-
+			
 			{
 				"\WBK_Combines\weapons\sounds\pulseSmg_fire_2",
 				1
 			},
-
+			
 			{
 				"\WBK_Combines\weapons\sounds\pulseSmg_fire_3",
 				1
 			},
-
+			
 			{
 				"\WBK_Combines\weapons\sounds\pulseSmg_fire_4",
 				1
@@ -7203,22 +6955,22 @@ class cfgSoundShaders
 	{
 		samples[]=
 		{
-
+			
 			{
 				"\WBK_Combines\weapons\sounds\apf_fire_1",
 				1
 			},
-
+			
 			{
 				"\WBK_Combines\weapons\sounds\apf_fire_2",
 				1
 			},
-
+			
 			{
 				"\WBK_Combines\weapons\sounds\apf_fire_3",
 				1
 			},
-
+			
 			{
 				"\WBK_Combines\weapons\sounds\apf_fire_4",
 				1
@@ -7229,22 +6981,22 @@ class cfgSoundShaders
 	{
 		samples[]=
 		{
-
+			
 			{
 				"\WBK_Combines\weapons\sounds\apf_distance_1",
 				1
 			},
-
+			
 			{
 				"\WBK_Combines\weapons\sounds\apf_distance_2",
 				1
 			},
-
+			
 			{
 				"\WBK_Combines\weapons\sounds\apf_distance_3",
 				1
 			},
-
+			
 			{
 				"\WBK_Combines\weapons\sounds\apf_distance_4",
 				1
@@ -7255,7 +7007,7 @@ class cfgSoundShaders
 	{
 		samples[]=
 		{
-
+			
 			{
 				"\WBK_Combines\weapons\sounds\sniper_close",
 				1
@@ -7266,7 +7018,7 @@ class cfgSoundShaders
 	{
 		samples[]=
 		{
-
+			
 			{
 				"\WBK_Combines\weapons\sounds\sniper_far",
 				1
@@ -7277,17 +7029,17 @@ class cfgSoundShaders
 	{
 		samples[]=
 		{
-
+			
 			{
 				"\WBK_OICW\OICW\oicw_close_1",
 				1
 			},
-
+			
 			{
 				"\WBK_OICW\OICW\oicw_close_2",
 				1
 			},
-
+			
 			{
 				"\WBK_OICW\OICW\oicw_close_3",
 				1
@@ -7299,7 +7051,7 @@ class cfgSoundShaders
 	{
 		samples[]=
 		{
-
+			
 			{
 				"\WBK_OICW\OICW\oicw_dist",
 				1
@@ -8880,7 +8632,7 @@ class Extended_InitPost_EventHandlers
 		class WBK_Combine_Soldier_Main_Init
 		{
 			onRespawn="true";
-			init="_unit = _this select 0; if (local _unit) then {_unit setVariable ['WBK_HL_CustomArmour',getNumber (configFile >> 'CfgVehicles' >> typeOf _unit >> 'WBK_CustomHPparam'),true]; _unit setVariable ['SFX_R_DisableDyingSounds',1,true]; _unit setSpeaker 'NoVoice';_unit disableAI 'RADIOPROTOCOL'; removeGoggles _unit; {_unit removeMagazines _x;} forEach magazines _unit; removeUniform _unit; _unit forceAddUniform (getText (configFile >> 'CfgVehicles' >> typeOf _unit >> 'uniformClass')); _unit setVariable ['dam_ignore_hit0',true,true];_unit setVariable ['dam_ignore_effect0',true,true]; _value = (configFile >> 'CfgVehicles' >> typeOf _unit >> 'magazines') call BIS_fnc_getCfgData;{_unit addMagazine _x;} forEach _value;};";
+			init="_unit = _this select 0; if (local _unit) then {_unit setVariable ['WBK_HL_CustomArmour',getNumber (configFile >> 'CfgVehicles' >> typeOf _unit >> 'WBK_CustomHPparam'),true]; _unit setVariable ['SFX_R_DisableDyingSounds',1,true]; _unit setSpeaker 'NoVoice';_unit disableAI 'RADIOPROTOCOL'; removeGoggles _unit; [_unit, 'WBK_CombineHead'] remoteExec ['setFace', 0, true]; {_unit removeMagazines _x;} forEach magazines _unit; removeUniform _unit; _unit forceAddUniform (getText (configFile >> 'CfgVehicles' >> typeOf _unit >> 'uniformClass')); _unit setVariable ['dam_ignore_hit0',true,true];_unit setVariable ['dam_ignore_effect0',true,true]; _value = (configFile >> 'CfgVehicles' >> typeOf _unit >> 'magazines') call BIS_fnc_getCfgData;{_unit addMagazine _x;} forEach _value;};";
 		};
 		class WBK_Combine_Soldier_VoiceType_Init
 		{
