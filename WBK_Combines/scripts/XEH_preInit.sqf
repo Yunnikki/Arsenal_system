@@ -1260,7 +1260,7 @@ if (
 (_unit getVariable "WBK_CombineType" == " HECU_") or
 (_unit getVariable "WBK_CombineType" == " G_HECU_") or
 (_unit getVariable "WBK_CombineType" == " guards_") or
-(_unit getVariable "WBK_CombineType" == " cp_") or
+(_unit getVariable "WBK_CombineType" == " cp_")
 ) exitWith {};
  _rndDead = [
 "",

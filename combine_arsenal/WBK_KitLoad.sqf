@@ -141,7 +141,6 @@ getNumber (configfile >> "CfgVehicles" >> "WBK_Combine_CP_SMG" >> "WBK_CustomHPp
 {WBK_OB_KitDescriptionActual = OB_Description_Text_CivilProtection; player setVariable ['SFX_R_DisableDyingSounds',1,true]; player setSpeaker 'NoVoice';player disableAI 'RADIOPROTOCOL';}
 ] spawn Wbk_AddKitFromUnitEquipment;
 };
-};
 
 case 4: {
   [
@@ -152,3 +151,6 @@ case 4: {
   getNumber (configfile >> "CfgVehicles" >> "WBK_Combine_MR_OFF" >> "WBK_CustomHPparam"),
   {WBK_OB_KitDescriptionActual = OB_Description_Text_MR1OFFICER; player setVariable ['SFX_R_DisableDyingSounds',1,true]; player setSpeaker 'NoVoice';player disableAI 'RADIOPROTOCOL';}
   ] spawn Wbk_AddKitFromUnitEquipment;
+};
+
+};
