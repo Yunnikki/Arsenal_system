@@ -143,14 +143,23 @@ getNumber (configfile >> "CfgVehicles" >> "WBK_Combine_CP_SMG" >> "WBK_CustomHPp
 };
 
 case 4: {
-  [
-  _object,
-  getText (configfile >> "CfgVehicles" >> "WBK_Combine_MR_OFF" >> "displayName"),
-  (configFile >> "CfgVehicles" >> "WBK_Combine_MR_OFF"),
-  getText (configfile >> "CfgVehicles" >> "WBK_Combine_MR_OFF" >> "WBK_CombineType"),
-  getNumber (configfile >> "CfgVehicles" >> "WBK_Combine_MR_OFF" >> "WBK_CustomHPparam"),
-  {WBK_OB_KitDescriptionActual = OB_Description_Text_MR1OFFICER; player setVariable ['SFX_R_DisableDyingSounds',1,true]; player setSpeaker 'NoVoice';player disableAI 'RADIOPROTOCOL';}
-  ] spawn Wbk_AddKitFromUnitEquipment;
-};
+[
+_object,
+getText (configfile >> "CfgVehicles" >> "WBK_Combine_MR_OFF" >> "displayName"),
+(configFile >> "CfgVehicles" >> "WBK_Combine_MR_OFF"),
+getText (configfile >> "CfgVehicles" >> "WBK_Combine_MR_OFF" >> "WBK_CombineType"),
+getNumber (configfile >> "CfgVehicles" >> "WBK_Combine_MR_OFF" >> "WBK_CustomHPparam"),
+{WBK_OB_KitDescriptionActual = OB_Description_Text_MR1OFFICER; player setVariable ['SFX_R_DisableDyingSounds',1,true]; player setSpeaker 'NoVoice';player disableAI 'RADIOPROTOCOL';}
+] spawn Wbk_AddKitFromUnitEquipment;
 
+[
+_object,
+getText (configfile >> "CfgVehicles" >> "WBK_Combine_MR_SLD" >> "displayName"),
+(configFile >> "CfgVehicles" >> "WBK_Combine_MR_SLD"),
+getText (configfile >> "CfgVehicles" >> "WBK_Combine_MR_SLD" >> "WBK_CombineType"),
+getNumber (configfile >> "CfgVehicles" >> "WBK_Combine_MR_SLD" >> "WBK_CustomHPparam"),
+{WBK_OB_KitDescriptionActual = OB_Description_Text_MR1soldier; player setVariable ['SFX_R_DisableDyingSounds',1,true]; player setSpeaker 'NoVoice';player disableAI 'RADIOPROTOCOL';}
+] spawn Wbk_AddKitFromUnitEquipment;
+
+};
 };

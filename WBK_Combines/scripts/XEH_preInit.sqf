@@ -1457,7 +1457,7 @@ if (
 (isNil {_this getVariable "WBK_HL_CustomArmour"}) or
 (isNil {_this getVariable "WBK_HL_CustomArmour_MAX"})
 ) exitWith {};
-if (stance _this == "PRONE") exitWith {systemChat "You cannot change your battery while prone";};
+if (stance _this == "PRONE") exitWith {systemChat "Нельзя менять батарею лежа";};
 if (!("WBK_Health_ArmourPlate" in items _this)) exitWith {
 systemChat "No Armour plate in inventory";
 };

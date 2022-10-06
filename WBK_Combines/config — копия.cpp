@@ -370,7 +370,6 @@ class CfgVehicles
 		{
 			"SC_Vest_WP_Medium_Guard",
 			"SC_Helmet_WP_EUD_Guard_VU",
-			"G_Balaclava_blk",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",
@@ -614,7 +613,6 @@ class CfgVehicles
 		{
 			"SC_Vest_WP_Heavy_Guard",
 			"SC_Helmet_RN_Guard",
-			"G_Balaclava_blk",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",
@@ -982,7 +980,6 @@ class CfgVehicles
 			"SC_Vest_WP_Heavy_Guard",
 			"SC_Helmet_Crusader_MFlat_V",
 			"SC_Backpack_WP_Guard",
-			"G_Balaclava_blk",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",
@@ -1110,7 +1107,6 @@ class CfgVehicles
 		{
 			"SC_Helmet_WP_EUD_Guard_VU",
 			"SC_Vest_WP_Light_Guard",
-			"G_Balaclava_blk",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",
@@ -1149,7 +1145,7 @@ class CfgVehicles
 			"OPTRE_12Rnd_8Gauge_Slugs",
 			"OPTRE_12Rnd_8Gauge_Slugs",
 			"OPTRE_12Rnd_8Gauge_Pellets",
-			"OPTRE_12Rnd_8Gauge_Pellets"
+			"OPTRE_12Rnd_8Gauge_Pellets",
 		};
 		items[]=
 		{
@@ -1235,7 +1231,6 @@ class CfgVehicles
 		{
 			"SC_Helmet_WP_EUD_Guard_VU",
 			"SC_Vest_WP_Light_Guard",
-			"G_Balaclava_blk",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",
@@ -1849,7 +1844,6 @@ class CfgVehicles
 		{
 			"Wasp_GRFlat_Light",
 			"SC_Helmet_WP_GRFlat_VU",
-			"G_Balaclava_blk",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",

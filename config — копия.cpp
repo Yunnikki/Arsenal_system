@@ -370,7 +370,6 @@ class CfgVehicles
 		{
 			"SC_Vest_WP_Medium_Guard",
 			"SC_Helmet_WP_EUD_Guard_VU",
-			"G_Balaclava_blk",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",
@@ -614,7 +613,6 @@ class CfgVehicles
 		{
 			"SC_Vest_WP_Heavy_Guard",
 			"SC_Helmet_RN_Guard",
-			"G_Balaclava_blk",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",
@@ -982,7 +980,6 @@ class CfgVehicles
 			"SC_Vest_WP_Heavy_Guard",
 			"SC_Helmet_Crusader_MFlat_V",
 			"SC_Backpack_WP_Guard",
-			"G_Balaclava_blk",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",
@@ -1110,7 +1107,6 @@ class CfgVehicles
 		{
 			"SC_Helmet_WP_EUD_Guard_VU",
 			"SC_Vest_WP_Light_Guard",
-			"G_Balaclava_blk",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",
@@ -1149,7 +1145,7 @@ class CfgVehicles
 			"OPTRE_12Rnd_8Gauge_Slugs",
 			"OPTRE_12Rnd_8Gauge_Slugs",
 			"OPTRE_12Rnd_8Gauge_Pellets",
-			"OPTRE_12Rnd_8Gauge_Pellets"
+			"OPTRE_12Rnd_8Gauge_Pellets",
 		};
 		items[]=
 		{
@@ -1235,7 +1231,6 @@ class CfgVehicles
 		{
 			"SC_Helmet_WP_EUD_Guard_VU",
 			"SC_Vest_WP_Light_Guard",
-			"G_Balaclava_blk",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",
@@ -1670,7 +1665,7 @@ class CfgVehicles
 			"HL_CMB_H_OW_E"
 		};
 	};
-	class WBK_Combine_MR_OFF
+	class WBK_Combine_MR_OFF: WBK_Combine_Ordinal
 	{
 		WBK_BehaveLikeHuman="true";
 		WBK_CustomHPparam=0;
@@ -1681,6 +1676,7 @@ class CfgVehicles
 		weapons[]=
 		{
 			"SC_Rifle_Ravager",
+			"SC_Reflex_C1_Red",
 			"SC_SSP9_Silencer",
 			"Throw",
 			"Put"
@@ -1762,99 +1758,97 @@ class CfgVehicles
 			"ItemWatch",
 			"TFAR_fadak"
 		};
-	};
-	class WBK_Combine_MR_SLD
-	{
-		WBK_BehaveLikeHuman="true";
-		WBK_CustomHPparam=0;
-		WBK_CombineType=" mrs_";
-		displayName="Солдат КМН";
-		uniformClass="WHC76_Camo_2_Uniform";
-		backpack="Wasp_GRFlat_Pack";
-		weapons[]=
+		class WBK_Combine_MR_SLD: WBK_Combine_Ordinal
 		{
-			"OPTRE_MA32",
-			"Throw",
-			"Put"
-		};
-		magazines[]=
-		{
-			"OPTRE_32Rnd_762x51_Mag",
-			"OPTRE_32Rnd_762x51_Mag",
-			"OPTRE_32Rnd_762x51_Mag",
-			"OPTRE_32Rnd_762x51_Mag",
-			"OPTRE_32Rnd_762x51_Mag",
-			"OPTRE_32Rnd_762x51_Mag",
-			"OPTRE_32Rnd_762x51_Mag",
-			"OPTRE_32Rnd_762x51_Mag",
-			"OPTRE_32Rnd_762x51_Mag",
-			"SC_IG3",
-			"SC_IG3",
-			"OPTRE_M2_Smoke"
-		};
-		items[]=
-		{
-			"ACE_morphine",
-			"ACE_morphine",
-			"ACE_elasticBandage",
-			"ACE_elasticBandage",
-			"ACE_elasticBandage",
-			"ACE_elasticBandage",
-			"ACE_elasticBandage",
-			"ACE_elasticBandage",
-			"ACE_elasticBandage",
-			"ACE_elasticBandage",
-			"ACE_elasticBandage",
-			"ACE_elasticBandage",
-			"ACE_elasticBandage",
-			"ACE_elasticBandage",
-			"ACE_elasticBandage",
-			"ACE_elasticBandage",
-			"ACE_elasticBandage",
-			"ACE_fieldDressing",
-			"ACE_fieldDressing",
-			"ACE_fieldDressing",
-			"ACE_fieldDressing",
-			"ACE_fieldDressing",
-			"ACE_fieldDressing",
-			"ACE_fieldDressing",
-			"ACE_fieldDressing",
-			"ACE_fieldDressing",
-			"ACE_fieldDressing",
-			"ACE_fieldDressing",
-			"ACE_fieldDressing",
-			"ACE_fieldDressing",
-			"ACE_fieldDressing",
-			"ACE_fieldDressing",
-			"ACE_packingBandage",
-			"ACE_packingBandage",
-			"ACE_packingBandage",
-			"ACE_packingBandage",
-			"ACE_packingBandage",
-			"ACE_packingBandage",
-			"ACE_packingBandage",
-			"ACE_packingBandage",
-			"ACE_packingBandage",
-			"ACE_packingBandage",
-			"ACE_packingBandage",
-			"ACE_packingBandage",
-			"ACE_packingBandage",
-			"ACE_packingBandage",
-			"ACE_packingBandage",
-			"ACE_tourniquet",
-			"ACE_tourniquet",
-			"ACE_EntrenchingTool"
-		};
-		linkedItems[]=
-		{
-			"Wasp_GRFlat_Light",
-			"SC_Helmet_WP_GRFlat_VU",
-			"G_Balaclava_blk",
-			"ItemMap",
-			"ItemCompass",
-			"ItemWatch",
-			"TFAR_fadak"
-		};
+			WBK_BehaveLikeHuman="true";
+			WBK_CustomHPparam=0;
+			displayName="Солдат КМН";
+			uniformClass="WHC76_Camo_2_Uniform";
+			backpack="Wasp_GRFlat_Pack";
+			weapons[]=
+			{
+				"OPTRE_MA32",
+				"OPTRE_M393_EOTECH",
+				"Throw",
+				"Put"
+			};
+			magazines[]=
+			{
+				"OPTRE_32Rnd_762x51_Mag",
+				"OPTRE_32Rnd_762x51_Mag",
+				"OPTRE_32Rnd_762x51_Mag",
+				"OPTRE_32Rnd_762x51_Mag",
+				"OPTRE_32Rnd_762x51_Mag",
+				"OPTRE_32Rnd_762x51_Mag",
+				"OPTRE_32Rnd_762x51_Mag",
+				"OPTRE_32Rnd_762x51_Mag",
+				"OPTRE_32Rnd_762x51_Mag",
+				"SC_IG3",
+				"SC_IG3",
+				"OPTRE_M2_Smoke"
+			};
+			items[]=
+			{
+				"ACE_morphine",
+				"ACE_morphine",
+				"ACE_elasticBandage",
+				"ACE_elasticBandage",
+				"ACE_elasticBandage",
+				"ACE_elasticBandage",
+				"ACE_elasticBandage",
+				"ACE_elasticBandage",
+				"ACE_elasticBandage",
+				"ACE_elasticBandage",
+				"ACE_elasticBandage",
+				"ACE_elasticBandage",
+				"ACE_elasticBandage",
+				"ACE_elasticBandage",
+				"ACE_elasticBandage",
+				"ACE_elasticBandage",
+				"ACE_elasticBandage",
+				"ACE_fieldDressing",
+				"ACE_fieldDressing",
+				"ACE_fieldDressing",
+				"ACE_fieldDressing",
+				"ACE_fieldDressing",
+				"ACE_fieldDressing",
+				"ACE_fieldDressing",
+				"ACE_fieldDressing",
+				"ACE_fieldDressing",
+				"ACE_fieldDressing",
+				"ACE_fieldDressing",
+				"ACE_fieldDressing",
+				"ACE_fieldDressing",
+				"ACE_fieldDressing",
+				"ACE_fieldDressing",
+				"ACE_packingBandage",
+				"ACE_packingBandage",
+				"ACE_packingBandage",
+				"ACE_packingBandage",
+				"ACE_packingBandage",
+				"ACE_packingBandage",
+				"ACE_packingBandage",
+				"ACE_packingBandage",
+				"ACE_packingBandage",
+				"ACE_packingBandage",
+				"ACE_packingBandage",
+				"ACE_packingBandage",
+				"ACE_packingBandage",
+				"ACE_packingBandage",
+				"ACE_packingBandage",
+				"ACE_tourniquet",
+				"ACE_tourniquet",
+				"ACE_EntrenchingTool"
+			};
+			linkedItems[]=
+			{
+				"Wasp_GRFlat_Light",
+				"SC_Helmet_WP_GRFlat_VU",
+				"ItemMap",
+				"ItemCompass",
+				"ItemWatch",
+				"TFAR_fadak"
+			};
 	};
 	class O_Survivor_F;
 	class WBK_Rebel_HL2_SMG_1: O_Survivor_F
