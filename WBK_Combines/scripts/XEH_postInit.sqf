@@ -141,7 +141,7 @@ ctrlDelete ((findDisplay 46) displayCtrl 0281198);
 ctrlDelete ((findDisplay 46) displayCtrl 0263218);
 sleep 0.5;
 };
-WBK_ECHO_HelmetArray = ["Combaine_helmet_White","Combaine_helmet_White","HL_CMB_H_OW_E","CombainSolder","WBK_CP_HLA_Helm","CombainAssassin2","CombainAssassin","CombainOrdenal","Combaine_helmet","HLA_Headgear_CombineApf","HLA_Headgear_CombineCharger","SC_Helmet_WP_TNFlat","SC_Helmet_WP_EUD_Guard_VU","OPTRE_HUD_r_Glasses","SC_Helmet_RN_Guard","SC_Helmet_Crusader_MFlat_V"];
+WBK_ECHO_HelmetArray = ["HLA_Headgear_CombineCharger","SC_Helmet_WP_TNFlat","SC_Helmet_WP_EUD_Guard_VU","SC_Helmet_RN_Guard","SC_Helmet_Crusader_MFlat_V","SC_Helmet_WP_Desert","SC_Helmet_WP_EUD_Desert_VU","SC_Helmet_WP_EUD_Desert_V","SC_Helmet_WP_Black","SC_Helmet_WP_EUD_Black_VU","SC_Helmet_WP_EUD_Black_V","SC_Helmet_WP_DSCAT","SC_Helmet_WP_EUD_DCSAT_VU","SC_Helmet_WP_EUD_DCSAT_V","SC_Helmet_WP_DDigital","SC_Helmet_WP_DDigital_VU","SC_Helmet_WP_DDigital_V","SC_Helmet_WP_LBlack","SC_Helmet_WP_LBlack_VU","SC_Helmet_WP_LBlack_V","SC_Helmet_WP_LDesert","SC_Helmet_WP_LDesert_VU","SC_Helmet_WP_LDesert_V"];
 disableSerialization;
 _WBK_DT_SMHud = findDisplay 46 ctrlCreate ["RscStructuredText", 0281191];
 _WBK_DT_SMHud ctrlSetPosition [(0 * safezoneW + safezoneX), safeZoneY + safeZoneH * 0.03, safeZoneW, safeZoneH * 0.06];
